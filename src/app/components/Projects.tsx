@@ -36,12 +36,28 @@ const projects = [
     period: "Jun 2025 – Present",
     stack: ["Next.js", "React", "Clerk", "Google Gemini AI", "Tailwind CSS"],
     color: "#7c3aed",
+    link: "https://www.genify.atuldeepsingh.com",
     description:
       "AI-powered content generator enabling users to create SEO-friendly blogs, tweets, and code snippets using Google Gemini AI, with rich text editing and secure auth.",
     highlights: [
       "Google Gemini AI for content generation",
       "Clerk authentication and session management",
       "Rich text editing via Toast UI Editor",
+    ],
+  },
+  {
+    name: "Gipher",
+    subtitle: "GIF Search & Discovery",
+    period: "Feb 2024 – Apr 2024",
+    stack: ["React.js", "Vite", "Tailwind CSS", "Giphy API"],
+    color: "#ec4899",
+    link: "https://gipher.atuldeepsingh.com",
+    description:
+      "Interactive GIF search engine and sharing application utilizing Giphy API. Features instant trending feeds, search auto-suggestions, and clipboard sharing.",
+    highlights: [
+      "Giphy API integration for real-time trending categories and GIF searching",
+      "Optimized masonry layouts and infinite scroll for fluid user experience",
+      "Micro-interactions and clipboard functionality for easy sharing",
     ],
   },
 ];
@@ -76,7 +92,7 @@ export function Projects() {
         </h2>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p, i) => (
           <motion.div
             key={p.name}
@@ -99,16 +115,40 @@ export function Projects() {
 
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3
-                  style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
-                    fontSize: "1.1rem",
-                    fontWeight: 700,
-                    color: "var(--foreground)",
-                  }}
-                >
-                  {p.name}
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h3
+                    style={{
+                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontSize: "1.1rem",
+                      fontWeight: 700,
+                      color: "var(--foreground)",
+                    }}
+                  >
+                    {p.name}
+                  </h3>
+                  {p.link && (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-muted-foreground transition-colors"
+                      title={`Visit ${p.name}`}
+                    >
+                      <ExternalLink
+                        size={15}
+                        style={{
+                          transition: "color 0.2s ease",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = p.color;
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "";
+                        }}
+                      />
+                    </a>
+                  )}
+                </div>
                 <div
                   style={{
                     fontFamily: "'Inter', sans-serif",
