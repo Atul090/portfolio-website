@@ -9,11 +9,11 @@ const projects = [
     stack: ["Node.js", "Express.js", "MongoDB", "Flutter", "AWS"],
     color: "#00c8ff",
     description:
-      "Scalable e-commerce backend for a pet care brand supporting personalised product recommendations, pet service bookings, and cross-platform mobile experience.",
+      "Scalable e-commerce backend for a premium pet care brand supporting personalized product recommendations, robust appointment scheduling, and cross-platform mobile services.",
     highlights: [
-      "30% reduction in query latency via optimised MongoDB APIs",
-      "25% increase in monthly active users with Flutter mobile app",
-      "Personalized product recommendations and pet service bookings",
+      "Reduced query latency by 30% through index optimization and schema refinement",
+      "Co-developed cross-platform APIs for a Flutter mobile app, driving a 25% increase in MAUs",
+      "Architected booking state machines and schemas handling 1,500+ daily appointments",
     ],
   },
   {
@@ -23,11 +23,11 @@ const projects = [
     stack: ["React.js", "JavaScript", "Material UI", "Chart.js", "CoinGecko API"],
     color: "#f59e0b",
     description:
-      "Responsive cryptocurrency dashboard visualising real-time market data. Uses React Context API for global state and Chart.js for interactive graphs.",
+      "A high-performance cryptocurrency tracker dashboard offering real-time pricing, historical trend analysis, and responsive layout styling.",
     highlights: [
-      "Real-time data from CoinGecko API",
-      "Interactive Chart.js visualisations",
-      "Global state with React Context API",
+      "Integrated live cryptocurrency feeds and search via CoinGecko REST endpoints",
+      "Designed historical price graphs with interactive hover states using Chart.js",
+      "Managed shared visual states and watchlists securely via React Context",
     ],
   },
   {
@@ -38,11 +38,11 @@ const projects = [
     color: "#7c3aed",
     link: "https://www.genify.atuldeepsingh.com",
     description:
-      "AI-powered content generator enabling users to create SEO-friendly blogs, tweets, and code snippets using Google Gemini AI, with rich text editing and secure auth.",
+      "An AI-powered content assistant enabling creators to generate SEO-optimized articles, social posts, and code snippets using Google Gemini models.",
     highlights: [
-      "Google Gemini AI for content generation",
-      "Clerk authentication and session management",
-      "Rich text editing via Toast UI Editor",
+      "Utilized Google Gemini API for context-guided content creation",
+      "Implemented secure user sessions and access control using Clerk",
+      "Integrated Toast UI Editor for real-time markdown rendering and editing",
     ],
   },
   {
@@ -53,11 +53,11 @@ const projects = [
     color: "#ec4899",
     link: "https://gipher.atuldeepsingh.com",
     description:
-      "Interactive GIF search engine and sharing application utilizing Giphy API. Features instant trending feeds, search auto-suggestions, and clipboard sharing.",
+      "An interactive search engine and discovery platform for GIFs, utilizing real-time autocomplete suggestions and fluid layouts.",
     highlights: [
-      "Giphy API integration for real-time trending categories and GIF searching",
-      "Optimized masonry layouts and infinite scroll for fluid user experience",
-      "Micro-interactions and clipboard functionality for easy sharing",
+      "Integrated Giphy API for instant auto-suggestions and trending category feeds",
+      "Designed a fluid masonry grid layout with infinite scroll optimization",
+      "Implemented one-click clipboard copying and smooth micro-interactions",
     ],
   },
 ];

@@ -68,9 +68,9 @@ export function About() {
               color: "var(--muted-foreground)",
             }}
           >
-            I'm a <span style={{ color: "var(--foreground)" }}>Full Stack Developer</span> with{" "}
-            <span style={{ color: "var(--primary)" }}>2+ years</span> of experience building
-            production-grade applications for the MERN stack, GraphQL, and cloud services.
+            I am a <span style={{ color: "var(--foreground)" }}>Software Engineer</span> with over{" "}
+            <span style={{ color: "var(--primary)" }}>2 years</span> of experience building and scaling
+            production-grade applications across backend, frontend, and cloud architectures.
           </p>
           <p
             className="mb-5"
@@ -81,10 +81,10 @@ export function About() {
               color: "var(--muted-foreground)",
             }}
           >
-            At <span style={{ color: "var(--foreground)" }}>Heads Up For Tails</span>, I've led projects
-            spanning Shopify integrations, appointment systems handling{" "}
-            <span style={{ color: "var(--primary)" }}>1,500 bookings/day</span> across 100+ stores, and
-            a semantic search pipeline powered by OpenAI embeddings.
+            At <span style={{ color: "var(--foreground)" }}>Heads Up For Tails</span>, I drive the development of
+            core services including high-performance Shopify sync pipelines, e-commerce integrations, booking systems
+            managing <span style={{ color: "var(--primary)" }}>1,500+ daily appointments</span> across 100+ stores, and
+            semantic search indexing powered by OpenAI embeddings and Elasticsearch.
           </p>
           <p
             style={{
@@ -94,10 +94,9 @@ export function About() {
               color: "var(--muted-foreground)",
             }}
           >
-            Outside of work I build side projects around{" "}
-            <span style={{ color: "var(--foreground)" }}>AI content generation</span> and crypto data
-            visualisation, always exploring where intelligent automation meets great developer
-            experience.
+            I write deep-dive technical articles and build open-source tools around{" "}
+            <span style={{ color: "var(--foreground)" }}>AI content generation</span> and data visualizations—striving
+            to simplify software engineering concepts and share practical architectural insights.
           </p>
         </motion.div>
 

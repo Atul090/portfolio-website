@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, ArrowDown, FileText, Download } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown, FileText, Download, BookOpen } from "lucide-react";
 import profilePhoto from "../../assets/profile.png";
 import resumePDF from "../../imports/Atul_Singh.pdf";
 
@@ -39,9 +39,9 @@ export function Hero() {
 
   const stats = [
     { value: "2+", label: "Years Experience" },
-    { value: "100+", label: "Stores Scaled" },
-    { value: "80%", label: "Process Automation" },
-    { value: "70%", label: "Booking Uplift" },
+    { value: "100+", label: "Stores Integrated" },
+    { value: "80%", label: "Order Automation" },
+    { value: "1.5k+", label: "Daily Bookings" },
   ];
 
   return (
@@ -136,8 +136,7 @@ export function Hero() {
                 color: "var(--muted-foreground)",
               }}
             >
-              Building scalable MERN applications, GraphQL APIs, and AI-powered pipelines.
-              Passionate about clean architecture and shipping reliable solutions fast.
+              Software Engineer specializing in building high-throughput backend systems, e-commerce integrations, and production-grade AI pipelines. Focused on clean architecture and performance scaling.
             </motion.p>
 
             <motion.div
@@ -156,6 +155,21 @@ export function Hero() {
                 }}
               >
                 <Mail size={15} /> Get in Touch
+              </a>
+              <a
+                href="https://blog.atuldeepsingh.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 hover:shadow-[0_0_12px_rgba(0,200,255,0.2)]"
+                style={{
+                  background: "linear-gradient(135deg, rgba(0, 200, 255, 0.12) 0%, rgba(124, 58, 237, 0.12) 100%)",
+                  border: "1px solid var(--primary)",
+                  color: "var(--foreground)",
+                  fontFamily: "'Inter', sans-serif",
+                  textDecoration: "none",
+                }}
+              >
+                <BookOpen size={15} style={{ color: "var(--primary)" }} /> Read my Blog
               </a>
               <a
                 href="https://github.com/atul090"

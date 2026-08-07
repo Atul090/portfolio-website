@@ -7,6 +7,7 @@ const links = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Blog", href: "#blog" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
@@ -64,26 +65,46 @@ export function Nav({ theme, onToggleTheme }: NavProps) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-end gap-6">
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <button
-              key={l.href}
-              onClick={() => scrollTo(l.href)}
-              className="relative text-sm transition-colors duration-200"
-              style={{
-                color: active === l.href.slice(1) ? "var(--primary)" : "var(--muted-foreground)",
-                fontFamily: "'Inter', sans-serif",
-              }}
-            >
-              {l.label}
-              {active === l.href.slice(1) && (
-                <motion.div
-                  layoutId="nav-dot"
-                  className="absolute -bottom-1 left-0 right-0 h-px"
-                  style={{ background: "var(--primary)" }}
-                />
-              )}
-            </button>
-          ))}
+          {links.map((l) => {
+            const isBlog = l.label === "Blog";
+            if (isBlog) {
+              return (
+                <button
+                  key={l.href}
+                  onClick={() => scrollTo(l.href)}
+                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase transition-all duration-200 hover:scale-105 hover:shadow-[0_0_10px_rgba(0,200,255,0.2)]"
+                  style={{
+                    background: "rgba(0, 200, 255, 0.12)",
+                    border: "1px solid var(--primary)",
+                    color: "var(--primary)",
+                    fontFamily: "'Inter', sans-serif",
+                  }}
+                >
+                  {l.label}
+                </button>
+              );
+            }
+            return (
+              <button
+                key={l.href}
+                onClick={() => scrollTo(l.href)}
+                className="relative text-sm transition-colors duration-200"
+                style={{
+                  color: active === l.href.slice(1) ? "var(--primary)" : "var(--muted-foreground)",
+                  fontFamily: "'Inter', sans-serif",
+                }}
+              >
+                {l.label}
+                {active === l.href.slice(1) && (
+                  <motion.div
+                    layoutId="nav-dot"
+                    className="absolute -bottom-1 left-0 right-0 h-px"
+                    style={{ background: "var(--primary)" }}
+                  />
+                )}
+              </button>
+            );
+          })}
         </nav>
 
         {/* Theme toggle */}
@@ -125,19 +146,39 @@ export function Nav({ theme, onToggleTheme }: NavProps) {
             }}
           >
             <div className="px-6 py-4 flex flex-col gap-4">
-              {links.map((l) => (
-                <button
-                  key={l.href}
-                  onClick={() => scrollTo(l.href)}
-                  className="text-left text-sm py-1 transition-colors"
-                  style={{
-                    color: active === l.href.slice(1) ? "var(--primary)" : "var(--muted-foreground)",
-                    fontFamily: "'Inter', sans-serif",
-                  }}
-                >
-                  {l.label}
-                </button>
-              ))}
+              {links.map((l) => {
+                const isBlog = l.label === "Blog";
+                if (isBlog) {
+                  return (
+                    <button
+                      key={l.href}
+                      onClick={() => scrollTo(l.href)}
+                      className="text-left text-xs font-semibold py-1.5 px-3.5 rounded-full uppercase inline-block w-fit hover:bg-opacity-20"
+                      style={{
+                        background: "rgba(0, 200, 255, 0.12)",
+                        border: "1px solid var(--primary)",
+                        color: "var(--primary)",
+                        fontFamily: "'Inter', sans-serif",
+                      }}
+                    >
+                      {l.label}
+                    </button>
+                  );
+                }
+                return (
+                  <button
+                    key={l.href}
+                    onClick={() => scrollTo(l.href)}
+                    className="text-left text-sm py-1 transition-colors"
+                    style={{
+                      color: active === l.href.slice(1) ? "var(--primary)" : "var(--muted-foreground)",
+                      fontFamily: "'Inter', sans-serif",
+                    }}
+                  >
+                    {l.label}
+                  </button>
+                );
+              })}
             </div>
           </motion.div>
         )}
