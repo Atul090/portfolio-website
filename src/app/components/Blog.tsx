@@ -30,12 +30,12 @@ const posts = [
     color: "#10b981",
   },
   {
-    slug: "event-driven-backend-nodejs",
-    title: "From REST APIs to Event-Driven Backend Systems with Node.js",
-    description: "How to decouple heavy operations from the critical request-response path. Implement asynchronous workers in Node.js using RabbitMQ, thin controllers, idempotent consumer patterns, and correlation ID tracing.",
-    tags: ["Node.js", "Backend", "Event-Driven"],
-    date: "Jul 28, 2026",
-    readTime: "8 min read",
+    slug: "rest-vs-graphql",
+    title: "REST vs GraphQL: Choosing the Right API for a Product",
+    description: "Neither REST nor GraphQL wins by default — the right choice depends on what your clients actually need from the API, factoring in performance, caching, and schema flexibility.",
+    tags: ["GraphQL", "REST API", "API Design"],
+    date: "Aug 5, 2026",
+    readTime: "7 min read",
     color: "#f59e0b",
   },
 ];
