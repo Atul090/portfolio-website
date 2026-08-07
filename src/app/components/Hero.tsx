@@ -157,7 +157,7 @@ export function Hero() {
                 <Mail size={15} /> Get in Touch
               </a>
               <a
-                href="https://blog.atuldeepsingh.com/"
+                href="https://blog.atuldeepsingh.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 hover:shadow-[0_0_12px_rgba(0,200,255,0.2)]"

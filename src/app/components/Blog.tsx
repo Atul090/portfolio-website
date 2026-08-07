@@ -84,7 +84,7 @@ export function Blog() {
         {posts.map((post, i) => (
           <motion.a
             key={post.slug}
-            href={`https://blog.atuldeepsingh.com/writing/${post.slug}`}
+            href="https://blog.atuldeepsingh.com"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 24 }}
@@ -196,7 +196,7 @@ export function Blog() {
         className="mt-12 flex justify-center"
       >
         <a
-          href="https://blog.atuldeepsingh.com/"
+          href="https://blog.atuldeepsingh.com"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 hover:scale-105"

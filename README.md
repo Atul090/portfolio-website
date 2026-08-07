@@ -3,7 +3,7 @@
 A premium, fluid, and high-performance developer portfolio and resume showcase built with React, Vite, Tailwind CSS, and Framer Motion. 
 
 Live Portfolio: [atuldeepsingh.com](https://atuldeepsingh.com/)  
-Live Developer Blog: [blog.atuldeepsingh.com](https://blog.atuldeepsingh.com/)
+Live Developer Blog: [blog.atuldeepsingh.com](https://blog.atuldeepsingh.com)
 
 ---
 
@@ -29,7 +29,7 @@ The portfolio is built with a modern and optimized tech stack:
 
 - **Interactive Typist Hero**: A custom typewriter effect showcasing skills and titles dynamically, alongside a rotating dashed border around the profile avatar.
 - **Live Stats Dashboard**: Renders real-time engineering metrics detailing order automation percentage, stores integrated, and daily bookings.
-- **Highlighted Technical Writing**: A dedicated section displaying featured deep-dive blogs with direct, tab-safe external links to [https://blog.atuldeepsingh.com/](https://blog.atuldeepsingh.com/).
+- **Highlighted Technical Writing**: A dedicated section displaying featured deep-dive blogs with direct, tab-safe external links to [https://blog.atuldeepsingh.com](https://blog.atuldeepsingh.com).
 - **Dynamic Work Experience**: Expandable cards revealing detailed impact statistics, tag pills for the technologies used, and clean layout timelines.
 - **IntersectionObserver Navigation**: The navigation header tracks scrolling position automatically, highlighting the active section with a matching dot.
 - **Theme Switcher**: Smooth, client-side toggle between dark (cosmic blue-black) and light (slate-blue) modes.
