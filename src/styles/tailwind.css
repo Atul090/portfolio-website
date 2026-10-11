@@ -1,0 +1,8 @@
+@import 'tailwindcss' source(none);
+
+/* Only scan the files that are actually part of the app. The generated
+   shadcn kit under components/ui and the figma helper are not imported. */
+@source '../app/App.tsx';
+@source '../app/components/*.tsx';
+@source '../app/data/*.ts';
+@source '../app/hooks/*.ts';
